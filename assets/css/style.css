@@ -46,14 +46,19 @@ footer {
     width: 100%;
 }
 
+.categoria, .grid-container {
+    margin: 30px;
+    padding: 10px;
+}
+
 .categoria {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     min-height: 100px;
     width: 100%;
-    padding: 10px;
-    margin: 20px;
+    
+    
 }
 
 .card {
@@ -83,8 +88,7 @@ h4, p {
     column-gap: 10px;
     width: 100%;
     height: 100%;
-    padding: 10px;
-    margin: 30px;
+    
 }
 
 section div .img-producto {
