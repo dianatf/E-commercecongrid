@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    
+}
+
+body {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .body {
@@ -22,7 +26,8 @@ header {
     color: white;
     background-color: rgb(42, 42, 117);
     padding: 10px;
-    width: 100%;
+    margin: 0;
+    width: 110%;
 }
 
 aside {
@@ -31,6 +36,8 @@ aside {
 
 section {
     grid-area: section;
+    height: 100%;
+    width: 100%;
 }
 
 footer {
@@ -46,6 +53,7 @@ footer {
     min-height: 100px;
     width: 100%;
     padding: 10px;
+    margin: 30px;
 }
 
 .card {
@@ -76,7 +84,7 @@ h4, p {
     width: 100%;
     height: 100%;
     padding: 10px;
-    margin-left: 30px;
+    margin: 30px;
 }
 
 section div .img-producto {
@@ -90,4 +98,9 @@ button {
     height: 20%;
     width: 100%;
     
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
 }
