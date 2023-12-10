@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/763d13a511.js" crossorigin="anonymous"></script>
     <title>DT e-commerce</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -11,28 +12,46 @@
 <body>
     <div class="body">
         <!--Nav-->
+
         <header>
             <nav>
-                <h1>Mi E-commerce</h1>
+                <div class="nav">
+                    <h1>Ordenar por:</h1>
+                </div>
+                <div class="nav">
+                    <label for="referrer"> Precio
+                        <select id="referrer" name="referrer">
+                            <option value="">(Seleccione una opción)</option>
+                            <option value="1">Pintura Cristal</option>
+                            <option value="2">Pintura Astro</option>
+                            <option value="3">Pintura Cat</option>
+                            <option value="4">Pintura Verano</option>
+                        </select>
+                    </label>
+                </div>
+
             </nav>
         </header>
         <!--Aside categoria-->
-        <aside class="categoria">
-            <h2>Categoría</h2>
-            <p>Pintura cristal(1)</p>
-            <p>Pintura astro(1)</p>
-            <p>Pintura cat(1)</p>
-            <p>Pintura verano(1)</p>
+        <aside class="categoria-container">
+            <img class="img-logo" src="assets/imgs/logo-business.png" alt="logo">
+            <div class="icon-abrir"><i class="fa-solid fa-bars"></i></div>
+            <div class="categoria">
+                <p>Inicio</p>
+                <p>Catálogo</p>
+                <p>Ofertas</p>
+                <p>Contacto</p>
+            </div>
         </aside>
         <!--section producto-->
         <section class="grid-container">
-            <div class="card">
+            <div class="card" id="ocultar">
                 <img class="img-producto" src="assets/imgs/astronauta 2.jpg" alt="astro">
                 <div>
                     <h4>Pintura Astro</h4>
                     <p>$2.000</p>
                 </div>
-                <button>Comprar</button>
+                <button>Ver más</button>
             </div>
             <div class="card">
                 <img class="img-producto" src="assets/imgs/corazon.jpg" alt="corazon">
@@ -40,37 +59,41 @@
                     <h4>Pintura Corazón</h4>
                     <p>$4.000</p>
                 </div>
-                <button>Comprar</button>
+                <button>Ver más</button>
             </div>
-            <div class="card">
+            <div class="card" id="ocultar">
                 <img class="img-producto" src="assets/imgs/GATITO 3.jpg" alt="gatito">
                 <div>
                     <h4>Pintura Cat</h4>
                     <p>$1.000</p>
                 </div>
-                <button>Comprar</button>
+                <button>Ver más</button>
             </div>
-            <div class="card">
+            <div class="card" id="ocultar">
                 <img class="img-producto" src="assets/imgs/Gatito 2.jpg" alt="gatito">
                 <div>
                     <h4>Pintura Cat</h4>
                     <p>$1.000</p>
                 </div>
-                <button>Comprar</button>
+                <button>Ver más</button>
             </div>
-            <div class="card">
+            <div class="card" id="ocultar">
                 <img class="img-producto" src="assets/imgs/Img mejorada verano.png" alt="verano">
                 <div>
                     <h4>Pintura Verano</h4>
                     <p>$2.000</p>
                 </div>
-                <button>Comprar</button>
+                <button>Ver más</button>
             </div>
         </section>
         <!--Footer-->
         <footer>
             <div class="footer">
-                <p>@dianacarolinatorresfranco</p>
+                <div class="icon-footer">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <p>Todos los derechos reservados</p>
             </div>
         </footer>
     </div>
