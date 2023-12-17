@@ -12,41 +12,38 @@
 <body>
     <div class="body">
         <!--Nav-->
-
-        <header>
-            <nav>
-                <div class="nav">
-                    <h1>Ordenar por:</h1>
-                </div>
-                <div class="nav">
-                    <label for="referrer"> Precio
-                        <select id="referrer" name="referrer">
-                            <option value="">(Seleccione una opción)</option>
-                            <option value="1">Pintura Cristal</option>
-                            <option value="2">Pintura Astro</option>
-                            <option value="3">Pintura Cat</option>
-                            <option value="4">Pintura Verano</option>
-                        </select>
-                    </label>
-                </div>
-
-            </nav>
-        </header>
-        <!--Aside categoria-->
-        <aside class="categoria-container">
-            <img class="img-logo" src="assets/imgs/logo-business.png" alt="logo">
-            <div class="icon-abrir"><i class="fa-solid fa-bars"></i></div>
-            <div class="categoria">
-                <p>Inicio</p>
-                <p>Catálogo</p>
-                <p>Ofertas</p>
-                <p>Contacto</p>
+        <main>
+            <div class="nav" id="main">
+                <h1>Ordenar por:</h1>
             </div>
-        </aside>
+            <div class="nav">
+                <label for="referrer"> Precio
+                    <select id="referrer" name="referrer">
+                        <option value="">(Seleccione una opción)</option>
+                        <option value="1">Pintura Cristal</option>
+                        <option value="2">Pintura Astro</option>
+                        <option value="3">Pintura Cat</option>
+                        <option value="4">Pintura Verano</option>
+                    </select>
+                </label>
+            </div>
+        </main>
+        <!--Aside categoria-->
+        <nav class="navbar">
+            <img class="img-logo" src="./assets/imgs/logo-business.png" alt="logo">
+            <label class="icon-abrir" for="menu-hamburguesa"><i class="fa-solid fa-bars"></i></label>
+            <input class="menu-input" type="checkbox" name="" id="menu-hamburguesa">
+                <ul class="ul-link">
+                    <li class="li-link"><a class="a-link" href="#main">Inicio</a></li>
+                    <li class="li-link"><a class="a-link" href="#catalogo">Catálogo</a></li>
+                    <li class="li-link"><a class="a-link" href="#main">Ofertas</a></li>
+                    <li class="li-link"><a class="a-link" href="#footer">Contacto</a></li>
+                </ul>
+        </nav>
         <!--section producto-->
-        <section class="grid-container">
+        <section class="grid-container" id="catalogo">
             <div class="card" id="ocultar">
-                <img class="img-producto" src="assets/imgs/astronauta 2.jpg" alt="astro">
+                <img class="img-producto" src="./assets/imgs/astronauta 2.jpg" alt="astro">
                 <div>
                     <h4>Pintura Astro</h4>
                     <p>$2.000</p>
@@ -54,7 +51,7 @@
                 <button>Ver más</button>
             </div>
             <div class="card">
-                <img class="img-producto" src="assets/imgs/corazon.jpg" alt="corazon">
+                <img class="img-producto" src="./assets/imgs/corazon.jpg" alt="corazon">
                 <div>
                     <h4>Pintura Corazón</h4>
                     <p>$4.000</p>
@@ -62,7 +59,7 @@
                 <button>Ver más</button>
             </div>
             <div class="card" id="ocultar">
-                <img class="img-producto" src="assets/imgs/GATITO 3.jpg" alt="gatito">
+                <img class="img-producto" src="./assets/imgs/Gatito 2.jpg" alt="gatito">
                 <div>
                     <h4>Pintura Cat</h4>
                     <p>$1.000</p>
@@ -70,7 +67,7 @@
                 <button>Ver más</button>
             </div>
             <div class="card" id="ocultar">
-                <img class="img-producto" src="assets/imgs/Gatito 2.jpg" alt="gatito">
+                <img class="img-producto" src="./assets/imgs/GATITO 3.jpg" alt="gatito">
                 <div>
                     <h4>Pintura Cat</h4>
                     <p>$1.000</p>
@@ -78,7 +75,31 @@
                 <button>Ver más</button>
             </div>
             <div class="card" id="ocultar">
-                <img class="img-producto" src="assets/imgs/Img mejorada verano.png" alt="verano">
+                <img class="img-producto" src="./assets/imgs/Img mejorada verano.png" alt="verano">
+                <div>
+                    <h4>Pintura Verano</h4>
+                    <p>$2.000</p>
+                </div>
+                <button>Ver más</button>
+            </div>
+            <div class="card" id="ocultar">
+                <img class="img-producto" src="./assets/imgs/Img mejorada verano.png" alt="verano">
+                <div>
+                    <h4>Pintura Verano</h4>
+                    <p>$2.000</p>
+                </div>
+                <button>Ver más</button>
+            </div>
+            <div class="card" id="ocultar">
+                <img class="img-producto" src="./assets/imgs/Img mejorada verano.png" alt="verano">
+                <div>
+                    <h4>Pintura Verano</h4>
+                    <p>$2.000</p>
+                </div>
+                <button>Ver más</button>
+            </div>
+            <div class="card" id="ocultar">
+                <img class="img-producto" src="./assets/imgs/Img mejorada verano.png" alt="verano">
                 <div>
                     <h4>Pintura Verano</h4>
                     <p>$2.000</p>
@@ -87,11 +108,15 @@
             </div>
         </section>
         <!--Footer-->
-        <footer>
+        <footer id="footer">
             <div class="footer">
                 <div class="icon-footer">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
+                    <a href="https://www.instagram.com/ganemoscontodo/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/diana-carolina-torres-franco-16023a8b/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
                 </div>
                 <p>Todos los derechos reservados</p>
             </div>
